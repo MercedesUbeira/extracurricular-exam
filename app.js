@@ -46,9 +46,8 @@ function displayProjectsGrid(projects) {
       <p>${project.acf.type} | ${project.acf.client} </p>
     <p>${project.acf.description}</p><br>
       <p><a href="${project.acf.link}" target="_blank">View Project</a></p>
-       
       </article>
-  `
+  `// This last part of the code is using the insertAdjacentHTML method to add content to the different cards (grid-item), making sure it displays title, image, type, client, description and CTA button
 );
 }
 }

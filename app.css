@@ -8,6 +8,7 @@ body {
   overflow-x: hidden; 
 }
 
+/* a tag is the button inside the cards, and its programed to change colour when hoover*/
 a {
   position: absolute;
   bottom: 1em;
@@ -75,6 +76,7 @@ header {
   }
 }
 
+/*Responsiveness for smaller devices starts HERE*/
 @media only screen and (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
