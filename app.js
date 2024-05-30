@@ -44,7 +44,7 @@ function displayProjectsGrid(projects) {
       <img src="${project.acf.image}" alt="${project.title.rendered}"></img>
       <h2>${project.title.rendered} </h2>
       <p>${project.acf.type} | ${project.acf.client} </p>
-    <p>${project.acf.description}</p>
+    <p>${project.acf.description}</p><br>
       <p><a href="${project.acf.link}" target="_blank">View Project</a></p>
        
       </article>

@@ -2,9 +2,10 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #d27e3048;
+  background-color: #f49a452b;
   font-family: 'Poppins', sans-serif;
-  color: #333333;
+  color: #743700;
+  overflow-x: hidden; 
 }
 
 a {
@@ -20,18 +21,17 @@ a {
 }
 
 a:hover {
-  background-color: #743700;
+  background-color: #8d4302;
 }
 
 header {
-  background-color: #f8f9fa;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  color: #333333;
-
+  background-color: #ffffffd2;
+  color: #743700;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  height: 100px;
+  align-content: center;
+  
 }
 
 .grid {
@@ -45,9 +45,9 @@ header h1 {
 
 .grid-item {
   position: relative;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 8px 7px rgba(0, 0, 0, 0.1); 
   padding: 1.5em;
-  background-color: #f3f7ea; 
+  background-color: #ffffffd2; 
   transition: transform 0.3s, box-shadow 0.3s; 
   border-radius: 10px;
   color: #333333; 
@@ -72,5 +72,31 @@ header h1 {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  #project-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+  }
+
+
+  #project-grid .grid-item img {
+    width: 100%;
+    height: auto;
   }
 }
