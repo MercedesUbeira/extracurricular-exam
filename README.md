@@ -1,6 +1,6 @@
 # Web App Portfolio Project
 
-![Web App Solution](/img/project-overview.jpg)
+![Web App Solution](//img/project-overview.jpg)
 
 ## Overview
 
